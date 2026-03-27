@@ -1,6 +1,7 @@
 # Network Test Automation Lab (VMware)
 
-A simulated network test lab built using **VMware** and **Ubuntu virtual machines**. Designed to validate connectivity, traffic flow, and fault scenarios while automating network test execution and log analysis using Bash and Python scripts.
+A simulated network test lab built using **VMware** and **Ubuntu virtual machines**. </br>
+Designed to validate connectivity, traffic flow, and fault scenarios while automating network test execution and log analysis using Bash and Python scripts.
 
 [![Bash](https://img.shields.io/badge/Bash-scripting-blue)](https://www.gnu.org/software/bash/)  
 [![Python](https://img.shields.io/badge/Python-automation-yellow)](https://www.python.org/)  
