@@ -27,7 +27,7 @@ ping — connectivity testing </br>
 netcat (nc) — port availability </br>
 curl — HTTP requests  </br>
 iperf3 — throughput measurement  </br>
-tcpdump — packet capture </b>
+tcpdump — packet capture </br>
 iproute2 — latency and packet loss simulation  </br>
 
 ---
