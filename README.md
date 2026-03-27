@@ -1,37 +1,53 @@
-# Network-Test-Automation-Lab
-Network Test Automation Lab (VMware)
-A simulated network test lab built using VMware and Ubuntu virtual machines. Designed to validate connectivity, traffic flow, and fault scenarios while automating network test execution and log analysis using Bash and Python scripts.
+# Network Test Automation Lab (VMware)
+
+A simulated network test lab built using **VMware** and **Ubuntu virtual machines**. Designed to validate connectivity, traffic flow, and fault scenarios while automating network test execution and log analysis using Bash and Python scripts.
+
+[![Bash](https://img.shields.io/badge/Bash-scripting-blue)](https://www.gnu.org/software/bash/)  
+[![Python](https://img.shields.io/badge/Python-automation-yellow)](https://www.python.org/)  
+[![VMware](https://img.shields.io/badge/VMware-virtualization-lightgrey)](https://www.vmware.com/)
 
 ---
-### Project Overview
+
+## Project Overview
 
 This project demonstrates:
-Creation of a multi-node network lab using VMware VMs. </br>
-Basic network tests: connectivity, port availability, and throughput. </br>
-Simulation of network faults: packet loss, latency, and service downtime. </br>
-Automation of testing and log analysis using Bash and Python, reducing manual effort.</br>
+
+- Creation of a multi-node network lab using VMware VMs.
+- Basic network tests: connectivity, port availability, and throughput.
+- Simulation of network faults: packet loss, latency, and service downtime.
+- Automation of testing and log analysis using Bash and Python, reducing manual effort.
 
 ---
-### Lab Setup
-Virtual Machines
 
-| VM Name | Role            | IP Example      | Purpose                        |
-|---------|----------------|----------------|--------------------------------|
-| Client  | Test initiator  | 192.168.56.101 | Sends traffic, runs scripts    |
-| Server  | Service provider| 192.168.56.102 | Receives traffic, hosts services|
-Networking: Host-Only or Internal Network in VMware (isolated lab).
+## Lab Setup
 
----
+### Virtual Machines
+
+| VM Name | Role             | IP Example      | Purpose                       |
+|---------|-----------------|----------------|-------------------------------|
+| Client  | Test initiator  | 192.168.56.101 | Sends traffic, runs scripts   |
+| Server  | Service provider | 192.168.56.102 | Receives traffic, hosts services |
+
+**Networking:** Host-Only or Internal Network in VMware (isolated lab).
+
 ### Installed Tools
-ping — connectivity testing </br>
-netcat (nc) — port availability </br>
-curl — HTTP requests  </br>
-iperf3 — throughput measurement  </br>
-tcpdump — packet capture </br>
-iproute2 — latency and packet loss simulation  </br>
+
+- `ping` — connectivity testing  
+- `netcat (nc)` — port availability  
+- `curl` — HTTP requests  
+- `iperf3` — throughput measurement  
+- `tcpdump` — packet capture  
+- `iproute2` — latency and packet loss simulation
 
 ---
 
+## Test Scenarios
+
+### 1. Connectivity Test
+
+Verify network reachability between Client and Server:
+
+    ping -c 4 <Server-IP>
 ### Test Scenarios
 1. Connectivity Test </b>
 Purpose: Verify network reachability between Client and Server. </b>
@@ -85,7 +101,7 @@ Script for network test automation
     ./network_test.sh
 
 ---
-###Run analyze_logs.py
+### Run analyze_logs.py
 For analysing logs run 
 
     python3 analyze_logs.py
